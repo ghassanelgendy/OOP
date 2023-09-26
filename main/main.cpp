@@ -2,10 +2,11 @@
 //
 
 #include <iostream>
-
+#include "Car.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+	Car c1;
+	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
