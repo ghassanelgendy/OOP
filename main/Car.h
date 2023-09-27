@@ -10,7 +10,8 @@ private:
 	float milage;
 public:
 	Car(); //default constructor
-	Car(string m, float mil, int mo, string col);
+	Car(int mo, string col, string m, float mil);
+	~Car();
 	string getManufacturer();
 	string getColor();
 	float getMilage();

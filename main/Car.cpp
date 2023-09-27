@@ -6,6 +6,16 @@ Car::Car() : manufacturer("Honda"), model(2027), color("Red"), milage(122.92)
     cout << "The car is "<<model<<" "<<color<<" "<<manufacturer <<" with milage="<<milage<< "\tinitialized by default\n";
 }
 
+Car::Car(int mo , string col, string m, float mil) : model(mo), color(col), manufacturer(m), milage(mil)
+{
+    cout<< "The car is " << model << " " << color << " " << manufacturer << " with milage=" << milage << "\tinitialized by user\n";
+}
+
+Car::~Car()
+{
+    cout << "Car is destroyed\n";
+}
+
 string Car::getManufacturer()
 {
     return manufacturer;

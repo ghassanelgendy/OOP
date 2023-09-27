@@ -3,10 +3,19 @@
 
 #include <iostream>
 #include "Car.h"
+#include "Student.h"
+#include "Person.h"
 int main()
 {
-	Car c1;
-	
+	/*Car c1;
+	Car c2(1992,"Blue", "BMW", 12.3);
+	Person p1;
+	Person p2("Ghassan", 21.3, "Male");
+	*/
+	Student s1;
+	s1.display();
+	Student s2("Kareem", 23, "Male", 2, 2.13, "CS");
+	s2.display();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
