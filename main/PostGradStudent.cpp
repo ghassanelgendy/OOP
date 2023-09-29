@@ -25,5 +25,5 @@ string PostGradStudent::getResearchInterest()
 void PostGradStudent::display()
 {
 Student::display();
-	cout << "Area of research: "<<researchInterest<<endl;
+	cout << "Research Area: "<<researchInterest<<"\t";
 }

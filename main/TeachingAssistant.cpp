@@ -13,6 +13,6 @@ TeachingAssistant::TeachingAssistant(string name, float age, string gender, stri
 
 void TeachingAssistant::display() {
     PostGradStudent::display();
-    cout << "Job: TA" << "\t\tSalary: " << getSalary()<<endl;
+    cout << "Job: "<<getJob() << "\t\tSalary: " << getSalary()<<endl<<"========================================================================================\n";
 
 }
