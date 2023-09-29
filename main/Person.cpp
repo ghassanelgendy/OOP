@@ -4,12 +4,10 @@ using namespace std;
 
 Person::Person() : name("Unknown"), age(21), gender("Undefined")
 {
-	cout << "Person is initialized by default.\tBase class is initialized <Person>\n";
 }
 
 Person::Person(string nameIn, float ageIn, string genderIn) : name(nameIn), gender(genderIn), age(ageIn)
 {
-	cout << "Name: "<<name<<"\tAge: "<<age<<"\tGender: "<<gender<< "\nPerson is initialized by user.\n";
 
 }
 
@@ -45,7 +43,7 @@ string Person::getGender()
 
 void Person::display()
 {
-	cout << "Name: " << name << "\tAge: " << age << "\tGender: " << gender<<"\n";
+	cout << "Name: " << name << "\tAge: " << age << "\t\tGender: " << gender<<"\n";
 }
 
 

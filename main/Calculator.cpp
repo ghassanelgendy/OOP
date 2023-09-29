@@ -1,6 +1,6 @@
 #include "Calculator.h"
 #include <iostream>
-
+using namespace std;
 Calculator::Calculator()
 {
 	cout << "Calculator is initialized!";
@@ -26,7 +26,7 @@ int Calculator::add(int x, int y, int z)
 	return x+y+z;
 }
 
-int Calculator::add(string s1, string s2)
+string Calculator::add(string s1, string s2)
 {
-	return s1+" " + s2);
+	return s1 + " "+s2;
 }

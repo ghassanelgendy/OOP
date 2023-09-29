@@ -2,7 +2,6 @@
 #include <iostream>
 Student::Student():level(1),GPA(0.0),depart("undefined")
 {
-	cout << "derived class is initialized by paramaters <Student>\n";
 }
 
 Student::Student(string nameIn, float ageIn, string genderIn, int levelIn, float GPAIn, string departIn)
@@ -46,5 +45,5 @@ string Student::getDepart()
 void Student::display()
 {
 	Person::display();
-	cout << "Depart =" << depart << "Level =" << level << "GPA =" << GPA << "\n";
+	cout << "Depart: " << depart << "\tLevel: " << level << "\tGPA: " << GPA << "\n";
 }
