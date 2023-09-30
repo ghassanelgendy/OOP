@@ -9,21 +9,16 @@ public:
 	{
 
 	}
-Shape(string c) : color(c)
+	Shape(string c) : color(c)
 	{
 
 	}
-	virtual float getArea() {
-		cout << "Parent class get area";
-			return 0.1;
+    virtual float getArea() = 0;
+	virtual void draw() = 0;
+	virtual void erase() = 0;
+	string getColor() {
+		return color;
 	}
-	virtual void draw() {
-		cout << "Parent class draw" << color << " Color" << endl;
-	}
-	virtual void erase() {
-		cout << "Parent class erase" << endl;
-	}
-
 
 private:
 	string color;
@@ -36,6 +31,13 @@ public:
 	float getArea() {
       return radius * radius * 3.14;
 	}
+	void draw() {
+		cout << "A " << this->getColor() << " circle is being drew.\n";
+	}
+	void erase() {
+		cout << "A " << this->getColor() << " circle is being erased.\n";
+
+	}
 private:
 	float radius;
 };
@@ -45,6 +47,13 @@ public:
 	Box(float s,string c): Shape(c) {sideLength = s;}
 	float getArea() {
 		return sideLength * sideLength;
+	}
+	void draw() {
+		cout << "A " << this->getColor() << " box is being drew.\n";
+	}
+	void erase() {
+		cout << "A " << this->getColor() << " box is being erased.\n";
+
 	}
 private:
 	float sideLength;
@@ -56,19 +65,27 @@ public:
 	float getArea() {
 		return length * width;
 	}
+	void draw() {
+		cout << "A " << this->getColor() << " rectangle is being drew.\n";
+	}
+	void erase() {
+		cout << "A " << this->getColor() << " rectangle is being erased.\n";
 
+	}
 private:
 	float length;
 	float width;
 };
 int main(){
-    Shape s("red");
-    Rectangle r2(22,2,"red");
-    Shape* shapePtr = &r2;
-    cout<<shapePtr->getArea()<<endl;
-    Box b1(3,"blue");
-    shapePtr = &b1;
-    cout<<shapePtr->getArea();
+   Rectangle r1(2,3,"red");
+   Shape* shapePtr = &r1;
+   shapePtr->draw();
+   Circle r2(3,"blue");
+   shapePtr = &r2;
+   shapePtr->erase();
+    (&r2)->draw();
+    cout<<(&r2)->getArea()<<endl;
+    cout<<(&r1)->getArea();
 }
 
 
