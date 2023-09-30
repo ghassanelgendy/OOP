@@ -15,6 +15,7 @@ Shape(string c) : color(c)
 	}
 	virtual float getArea() {
 		cout << "Parent class get area";
+			return 0.1;
 	}
 	virtual void draw() {
 		cout << "Parent class draw" << color << " Color" << endl;
@@ -42,7 +43,6 @@ class Box : public Shape
 {
 public:
 	Box(float s,string c): Shape(c) {sideLength = s;}
-	~Box();
 	float getArea() {
 		return sideLength * sideLength;
 	}
@@ -61,10 +61,14 @@ private:
 	float length;
 	float width;
 };
-
-
-
-int main() {
-	Rectangle r(2.2, 1, "red");
-	cout<<r.getArea();
+int main(){
+    Shape s("red");
+    Rectangle r2(22,2,"red");
+    Shape* shapePtr = &r2;
+    cout<<shapePtr->getArea()<<endl;
+    Box b1(3,"blue");
+    shapePtr = &b1;
+    cout<<shapePtr->getArea();
 }
+
+

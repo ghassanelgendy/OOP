@@ -133,6 +133,7 @@
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Polymorphism.cpp" />
     <ClCompile Include="PostGradStudent.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Student.cpp" />
