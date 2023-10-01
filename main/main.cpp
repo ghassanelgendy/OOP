@@ -9,8 +9,14 @@
 #include "Employee.h"
 #include "TeachingAssistant.h"
 #include "RevEmployee.h"
+#include "Sales.h"
+#include "Engineer.h"
+
+
 int main()
 {
-	RevEmployee r("Ahmed",2022,1633.2);
-	r.print();
+	Sales s("Ahmed",2022,1633.2,15.4,0.5);
+	s.print();
+	Engineer e;
+	e.print();
 }

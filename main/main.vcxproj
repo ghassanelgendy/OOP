@@ -131,11 +131,13 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Distance.cpp" />
     <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="Engineer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="PostGradStudent.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RevEmployee.cpp" />
+    <ClCompile Include="Sales.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="TeachingAssistant.cpp" />
   </ItemGroup>
@@ -144,11 +146,13 @@
     <ClInclude Include="Car.h" />
     <ClInclude Include="Distance.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="Engineer.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="PostGradStudent.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="RevEmployee.h" />
+    <ClInclude Include="Sales.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="TeachingAssistant.h" />
   </ItemGroup>

@@ -48,6 +48,12 @@
     <ClCompile Include="RevEmployee.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sales.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engineer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h">
@@ -81,6 +87,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RevEmployee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sales.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engineer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
