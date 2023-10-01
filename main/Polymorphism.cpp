@@ -36,8 +36,8 @@ public:
 	}
 	void erase() {
 		cout << "A " << this->getColor() << " circle is being erased.\n";
-
 	}
+	friend void display(Circle c);
 private:
 	float radius;
 };
@@ -70,22 +70,17 @@ public:
 	}
 	void erase() {
 		cout << "A " << this->getColor() << " rectangle is being erased.\n";
-
 	}
 private:
 	float length;
 	float width;
 };
+void display(Circle c) {
+	cout << c.radius;
+}
 int main(){
-   Rectangle r1(2,3,"red");
-   Shape* shapePtr = &r1;
-   shapePtr->draw();
-   Circle r2(3,"blue");
-   shapePtr = &r2;
-   shapePtr->erase();
-    (&r2)->draw();
-    cout<<(&r2)->getArea()<<endl;
-    cout<<(&r1)->getArea();
+	Circle r2(3,"blue");
+	display(r2);
 }
 
 

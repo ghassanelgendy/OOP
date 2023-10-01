@@ -133,9 +133,9 @@
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Person.cpp" />
-    <ClCompile Include="Polymorphism.cpp" />
     <ClCompile Include="PostGradStudent.cpp" />
     <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="RevEmployee.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="TeachingAssistant.cpp" />
   </ItemGroup>
@@ -148,6 +148,7 @@
     <ClInclude Include="PostGradStudent.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="RevEmployee.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="TeachingAssistant.h" />
   </ItemGroup>

@@ -45,7 +45,7 @@
     <ClCompile Include="TeachingAssistant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Polymorphism.cpp">
+    <ClCompile Include="RevEmployee.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -78,6 +78,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TeachingAssistant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RevEmployee.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
