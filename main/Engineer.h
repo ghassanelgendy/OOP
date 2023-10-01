@@ -7,13 +7,15 @@ class Engineer :
 private:
     std::string specialty;
     int experience;
-    int overtimeHours;
+    float overtimeHours;
     float overtimeHourRate;
 public:
     Engineer();
-    Engineer(std::string name, int ID, double salary, int EXP, std::string SP, int OTH, float OTHR);
+    Engineer(std::string name, int ID, double salary,std::string SP,int EXP, float OTH, float OTHR);
     void setOvertimeHours(int OTH);
     void setOvertimeHourRate(float OTHR);
-    void print();
-}; 
+    float getTotalSalary() override;
+    void print() override;
+
+};
 

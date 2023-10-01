@@ -10,9 +10,8 @@ public:
     Sales();
     Sales(std::string name,int ID, double salary, float GS, float CR);
     void setGrossSales(float grossSales);
+    float getTotalSalary();
     void setCommissionRate(float commissionRate);
-    float getGrossSales();
-    float getCommissionRate();
     void print();
 };
 

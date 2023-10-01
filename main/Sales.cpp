@@ -5,37 +5,32 @@ Sales::Sales() : RevEmployee(), grossSales(0.0), commissionRate(0.0)
 }
 
 
-Sales::Sales(std::string name, int ID, double salary, float GS, float CR) :
-	RevEmployee(name, ID, salary)
+Sales::Sales(std::string n, int ID, double s, float GS, float CR) :
+	RevEmployee(n, ID, salary)
 {
 	grossSales = GS;
 	commissionRate = CR;
 }
 
-void Sales::setGrossSales(float grossSales)
+void Sales::setGrossSales(float GS)
 {
-	grossSales = grossSales;
+	grossSales = GS;
 }
 
-void Sales::setCommissionRate(float commissionRate)
+void Sales::setCommissionRate(float CR)
 {
-	commissionRate = commissionRate;
-}
-
-float Sales::getGrossSales()
-{
-	return grossSales;
-}
-
-float Sales::getCommissionRate()
-{
-	return commissionRate;
+	commissionRate = CR;
 }
 
 void Sales::print()
 {
 	RevEmployee::print();
-	std::cout << "\t\t\t\t\t\tSalesman Data\n" 
+	std::cout << "\t                              -Salesman Data-\n"
 		<< "\tGross sale: " << grossSales 
-		<< "\t\t\Commission rate: " << commissionRate;
+		<< "\t\t\tCommission rate: " << commissionRate<<"\t\t\tTotal Salary: "<<getTotalSalary()<<"\n\n"
+    <<breakLine();
+}
+
+float Sales::getTotalSalary() {
+    return salary + (grossSales * commissionRate);
 }
