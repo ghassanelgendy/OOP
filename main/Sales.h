@@ -8,10 +8,10 @@ private:
     float commissionRate;
 public:
     Sales();
-    Sales(std::string name,int ID, double salary, float GS, float CR);
+    Sales(std::string name,int ID, float salary, float GS, float CR);
     void setGrossSales(float grossSales);
-    float getTotalSalary();
+    float getTotalSalary() override;
     void setCommissionRate(float commissionRate);
-    void print();
+    void print() override;
 };
 

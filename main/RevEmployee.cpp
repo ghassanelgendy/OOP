@@ -8,11 +8,13 @@ RevEmployee::RevEmployee(std::string name, int ID, double salary) :name(name),em
 }
 void RevEmployee::print()
 {
-    std::cout << "\t                              -Employee Data-\n" << "\tName: " << name << "\t\t\tEmployee ID: " << empID << "\t\t\tSalary: " << salary<<"\n\n";
+    std::cout << "\t                              -Employee Data-\n" << "\tName: " << name << "\t\t\tEmployee ID: " 
+        << empID << "\t\t\tSalary: " 
+        << salary<<"\n\n";
 }
 
 std::string RevEmployee::breakLine() {
-    return "\t\t\t\t\t\t=====================================\n";
+    return "\t\t\t=====================================\n";
 
 
 }

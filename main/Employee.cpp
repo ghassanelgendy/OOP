@@ -29,7 +29,7 @@ float Employee::getSalary()
 {
 	return salary;
 }
-void Employee::print()
+void Employee::display()
 {
 	Person::display();
 	cout << "Job: "<<job<<"\tSalary: "<<salary<<endl;

@@ -10,7 +10,7 @@ public:
 	RevEmployee();
 	RevEmployee(std::string name, int ID, double salary);
 	virtual float getTotalSalary() = 0;
-  virtual std::string breakLine();
+	virtual std::string breakLine();
 	virtual void print();
 };
 

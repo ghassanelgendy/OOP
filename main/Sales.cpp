@@ -5,8 +5,8 @@ Sales::Sales() : RevEmployee(), grossSales(0.0), commissionRate(0.0)
 }
 
 
-Sales::Sales(std::string n, int ID, double s, float GS, float CR) :
-	RevEmployee(n, ID, salary)
+Sales::Sales(std::string n, int ID, float s, float GS, float CR) :
+	RevEmployee(n, ID, s)
 {
 	grossSales = GS;
 	commissionRate = CR;
@@ -29,6 +29,7 @@ void Sales::print()
 		<< "\tGross sale: " << grossSales 
 		<< "\t\t\tCommission rate: " << commissionRate<<"\t\t\tTotal Salary: "<<getTotalSalary()<<"\n\n"
     <<breakLine();
+	
 }
 
 float Sales::getTotalSalary() {
